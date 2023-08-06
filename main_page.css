@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: url('/website_imgs/carl-raw-m3hn2Kn5Bns-unsplash.jpg') no-repeat;
+    background-size: 100%;
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-color: transparent;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(5px); /* Thêm hiệu ứng blur nền */
+    display: flex;
+    justify-content: space-between;
+}
+
+.header div {
+    width: 30%;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+}
+
+.main-menu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.main-menu a:hover {
+    color: #afe0f5;
+    text-shadow: 0.1px 0.1px #afe0f5;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.logo img {
+    height: 100%;
+}
+
+.searching-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searching-bar input {
+    border-radius: 5px;
+    background-color: transparent;
+    border-color: #DFF8EB;
+    margin: 0px 2px;
+}
+
+.searching-bar i {
+    color: #DFF8EB;
+}
+
+.header.black-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+#to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right:  25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #faa916;
+    border-radius: 50%;
+    border-color: black;
+    visibility: hidden;
+}
