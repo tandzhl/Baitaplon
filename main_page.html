@@ -6,25 +6,25 @@
     <title>HOME | T&T</title>
     <link rel="stylesheet" type="text/css" href="main_page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="shortcut icon" href="/website_imgs/logo.png">
+    <link rel="shortcut icon" href="/website_imgs/logo2.png">
 </head>
 <body>
     <header class="header">
         <div>
-            <ul class="main-menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">OUR GAMES</a></li>
-                <li><a href="#">NEWS</a></li>
-                <li><a href="#">CONTACT</a></li>
+            <ul class="main-menu flex_center">
+                <li><a href="#" class="menu_item">HOME</a></li>
+                <li><a href="#" class="menu_item">OUR GAMES</a></li>
+                <li><a href="#" class="menu_item">NEWS</a></li>
+                <li><a href="#" class="menu_item">CONTACT</a></li>
             </ul>
         </div>
         <div class="logo">
-            <a href="#"><img src="/website_imgs/logo.png" alt="Logo"></a>
+            <a href="#"><img src="/website_imgs/logo2.png" alt="Logo"></a>
         </div>
-        <div class="searching-bar">
-                <a href="#"><i class="fa-solid fa-globe"></i></a>
-                <input type="text" placeholder=" Tìm kiếm ... ">
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <div class="searching-bar flex_center">
+            <button href="#"><i class="fa-solid fa-globe"></i></button>
+            <button id="search-icon" href="#" onclick="searchBar()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input id="search-bar" type="text" placeholder=" Tìm kiếm ... ">
         </div>
     </header>
     <h1>
@@ -71,8 +71,46 @@
             <li>Lorem ipsum dolor sit amet1.</li>
         </ul>
     </h1>
-    <footer></footer>
-    <a href="#" id="to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#"><i id="fb" class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i id="ig" class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i id="in" class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i id="yt" class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </nav>
+        <div>
+            <section class="flex_center">
+                <table>
+                    <tr>
+                        <td>PRESS</td>
+                        <td>SECURITY</td>
+                    </tr>
+                    <tr>
+                        <td>LEGAL</td>
+                        <td>LEADERSHIP</td>
+                    </tr>
+                    <tr>
+                        <td>CANDIDATE PRIVACY</td>
+                        <td>TERM OF SERVICE</td>
+                    </tr>
+                    <tr>
+                        <td>PRIVACY NOTICE</td>
+                        <td>PLAYER SUPPORT</td>
+                    </tr>
+                    <tr>
+                        <td>E-VERIFY</td>
+                        <td>ACCESSIBILITY</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="flex_center">
+                <img class="logo" src="/website_imgs/logo2.png" alt="">
+            </section>
+        </div>
+    </footer>
+    <a href="#" id="to-top" class="flex_center"><i class="fa-solid fa-arrow-up"></i></a>
     <script src="main_page.js"></script>
 </body>
 </html>

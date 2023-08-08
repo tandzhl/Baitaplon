@@ -11,6 +11,12 @@ body {
     color: white;
 }
 
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -32,14 +38,11 @@ body {
 }
 
 .main-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     list-style: none;
     height: 100%;
 }
 
-.main-menu a {
+.menu_item {
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -50,32 +53,39 @@ body {
     transition: 0.3s;
 }
 
-.main-menu a:hover {
+.menu_item:hover {
     color: #afe0f5;
     text-shadow: 0.1px 0.1px #afe0f5;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
+    transform: translateY(-2px);
 }
 
 .logo img {
     height: 100%;
-}
-
-.searching-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 5px;
 }
 
 .searching-bar input {
     border-radius: 5px;
     background-color: transparent;
     border-color: #DFF8EB;
+    display: none;
+}
+
+.searching-bar * {
     margin: 0px 2px;
 }
 
-.searching-bar i {
+.searching-bar input:hover {
+    transform: translateY(-1px);
+}
+
+.searching-bar button {
     color: #DFF8EB;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .header.black-bg {
@@ -84,9 +94,6 @@ body {
 }
 
 #to-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     right:  25px;
     bottom: 25px;
@@ -96,4 +103,73 @@ body {
     border-radius: 50%;
     border-color: black;
     visibility: hidden;
+}
+
+footer {
+    background-color: black;
+    padding: 5px;
+}
+
+footer i {
+    font-size: larger;
+    color: white;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+footer ul a {
+    margin: 0px 10px;
+}
+
+footer #fb:hover {
+    color: #4267B2;
+    transition: 0.1s;
+}
+
+footer #ig:hover {
+    color: #bc2a8d;
+    transition: 0.1s;
+}
+
+footer #in:hover {
+    color: #0A66C2;
+    transition: 0.1s;
+}
+
+footer #yt:hover {
+    color: #CD201F;
+    transition: 0.1s;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer div section {
+    width: 45%;
+}
+
+footer table {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 5px;
+    color: w;
+}
+
+footer td:hover {
+    font-weight: bold;
+    cursor: pointer;
+    color: red;
+    transition: 0.5s;
+}
+
+footer img {
+    border-radius: 5px;
 }
