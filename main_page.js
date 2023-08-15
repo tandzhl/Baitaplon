@@ -20,7 +20,7 @@ let searchIcon = document.getElementById('search-icon');
 let searchBar = document.getElementById('search-bar');
 
 searchIcon.addEventListener('click', function (event) {
-    event.stopPropagation();
+    event.stopPropagation(); //giải thích chỗ này
     searchBar.style.display = 'block';
 });
 
