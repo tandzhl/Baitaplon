@@ -19,23 +19,64 @@
                 <li><a href="#" class="menu_item">CONTACT</a></li>
             </ul>
         </div>
+
         <div class="logo">
             <a href="#"><img src="/website_imgs/logo2.png" alt="Logo"></a>
         </div>
+
         <div class="searching-bar flex_center">
             <button href="#"><i class="fa-solid fa-globe"></i></button>
-            <button id="search-icon" href="#" onclick="searchBar()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button id="search-icon" href="#" ><i class="fa-solid fa-magnifying-glass"></i></button>
             <input id="search-bar" type="text" placeholder=" Tìm kiếm ... " autocomplete="off">
         </div>
     </header>
 
     <!--Slider-->
     <section class="main banner flex_center">
-
+        <div class="image-slider">
+            <div class="image-slider-track">
+                <div class="slide">
+                    <img src="/slider-imgs/Best-Retro-Games-Crash-Bandicoot.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/slider-imgs/Best-Retro-Video-Games-Donkey-Kong-Country.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/slider-imgs/Best-Retro-Video-Games-DOOM.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/slider-imgs/Best-Retro-Video-Games-Final-Fantasy-VII.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/slider-imgs/Best-Retro-Video-Games-Goldeneye-007.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/slider-imgs/Best-Retro-Video-Games-Grand-Theft-Auto-IV.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/slider-imgs/Best-Retro-Video-Games-Grand-Theft-Auto.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/slider-imgs/Best-Retro-Video-Games-Metal-Gear-Solid.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/slider-imgs/Best-Retro-Video-Games-Pac-Man.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/slider-imgs/Best-Retro-Video-Games-Pokemon-Red-and-Blue-Version.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/slider-imgs/Best-Retro-Video-Games-Tomb-Raider.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/slider-imgs/Best-Retro-Video-Games-Snake.jpg">
+                </div>
+            </div>
+        </div>
     </section>
 
     <!--News-->
-    <h1 style="text-align: center; margin: 2.5% 0;">
+    <h1 class="title" style="text-align: center; margin: 2.5% 0;">
         News and Updates
     </h1>
     <section class="main news flex_center">
@@ -85,18 +126,18 @@
         <div class="hiring-img"><img src="/website_imgs/work-place2.png" alt="Work Place"></div>
         <div class="hiring-info">
             <div class="h-title">
-                <h1 style="font-size: 2rem;animation: blingbling 1s infinite alternate;">WE'RE HIRING!</h1>
+                <h1 style="animation: blingbling 1s infinite alternate;">WE'RE HIRING!</h1>
             </div>
             <div class="para">
                 <p>Team up with T&T to forge your path and craft unforgettable experiences for players</p>
             </div>
             <div class="hiring-static">
                 <div>
-                    <h1 style="font-size: 5rem">&#8734</h1>
+                    <h1>&#8734</h1>
                     <h2>Open positions</h2>
                 </div>
                 <div>
-                    <h1 style="font-size: 5rem">&#8734</h1>
+                    <h1>&#8734</h1>
                     <h2>Offices</h2>
                 </div>
             </div>
@@ -141,14 +182,14 @@
                     </tr>
                 </table>
             </section>
-            <section class="flex_center">
+            <section class="flex_center" style="align-items: center;">
                 <img class="logo" src="/website_imgs/logo2.png" alt="">
             </section>
         </div>
     </footer>
     
     <!--Go to top button-->
-    <a href="#" id="to-top" class="flex_center"><i class="fa-solid fa-arrow-up"></i></a>
+    <a href="javascript:;" id="to-top" class="flex_center" onclick="moveTop()"><i class="fa-solid fa-arrow-up"></i></a>
 
     <script src="main_page.js"></script>
 </body>

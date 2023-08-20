@@ -33,22 +33,36 @@ document.addEventListener('click', function (event) {
 function addComment() {
     const name = document.getElementById("name").value;
     const commentText = document.getElementById("comment").value;
-  
-    if (name.trim() === "" || commentText.trim() === "") {
+
+    if (name.replace(/^\s+|\s+$/gm,'') === "" || commentText.replace(/^\s+|\s+$/gm,'') === "") {
       alert("Please fill in all fields");
       return;
     }
-  
+
     const commentList = document.getElementById("comments-list");
-    const commentElement = document.createElement("div");
-    commentElement.className = "comment";
-    const timestamp = new Date().toLocaleString();
-    commentElement.innerHTML = `<strong>${name}</strong>: ${commentText}
-                                 <div class="timestamp">${timestamp}</div>`;
-    commentList.appendChild(commentElement);
-  
+    const time = new Date();
+    commentList.innerHTML += `<p><span>${name}</span> (${time.getHours()}:${time.getMinutes()}:${time.getSeconds()} ${time.toDateString()}): <br/> ${commentText}</p>`;
     document.getElementById("name").value = "";
     document.getElementById("comment").value = "";
-    rate(0);
   }
   
+const imgList = [
+    "slider-imgs/Best-Retro-Video-Games-Snake.jpg",
+    "slider-imgs/Best-Retro-Video-Games-Tomb-Raider.jpg",
+    "slider-imgs/Best-Retro-Video-Games-Pac-Man.jpg",
+    "slider-imgs/Best-Retro-Video-Games-Metal-Gear-Solid.jpg",
+    "slider-imgs/Best-Retro-Video-Games-Grand-Theft-Auto.jpg"
+]
+const imgs = document.querySelectorAll(".change img")
+let cur = 0;
+
+function changeImg() {
+    if(cur === imgList.length){
+        cur = 0;
+    }
+    for (let i = 0; i < imgs.length; i++) {
+        imgs[i].src = imgList[cur];
+    }
+    cur++;
+}
+setInterval(changeImg, 1500);
